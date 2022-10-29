@@ -32,13 +32,13 @@ const ToBuy = () => {
       messageShipping = `Quiero que me lo manden a la direccion ${dataInput.direction}`;
     }
     const message = `
-    Hola pinto pizza quería pedir ${messageList}
+    Hola quería pedir ${messageList}
     ${messageShipping}
     Mi nombre es ${dataInput.nameBuyer}
     `;
-    // console.log(message);
-    // console.log(infoUser.wppNumber)
-    UseWhatsapp(infoUser.wppNumber, message);
+    console.log(message);
+    console.log(infoUser.wppNumber.toString())
+    UseWhatsapp(infoUser.wppNumber.toString(), message);
   };
   return (
     <div className="flex flex-col gap-2">
